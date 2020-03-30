@@ -1,0 +1,786 @@
+{
+	"name": "veloce",
+	"displayName": "veloce",
+	"description": "Keybindings for efficient code edditing.",
+	"version": "0.0.1",
+	"publisher": "vscode-veloce",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ktnyt/vscode-veloce"
+	},
+	"engines": {
+		"vscode": "^1.43.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "veloce.escape",
+				"title": "Enable Veloce mode",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.insert",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.insertLineStart",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.append",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.appendLineEnd",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.selectionCutInsert",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.selectionDeleteInsert",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.insertLineAfter",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.insertLineBefore",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cutSelected",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.copySelected",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.pasteBefore",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.pasteAfter",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.pasteOver",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.pastePrev",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cancelSelection",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorLeft",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorLeftSelect",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorRight",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cusorRightSelect",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorUp",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorUpSelect",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorDown",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorDownSelect",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorWordStartLeftSelect",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorWordStartLeftExtend",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorWordStartRightSelect",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorWordStartRightExtend",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorWordEndRightSelect",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorWordEndRightExtend",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorCharacterBeforeRightSelect",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorCharacterBeforeRightExtend",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorCharacterAfterRightSelect",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorCharacterAfterRightExtend",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorCharacterBeforeLeftSelect",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorCharacterBeforeLeftSelect",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorCharacterAfterLeftSelect",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorCharacterAfterLeftExtend",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorLineSelect",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.cursorLineExtend",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.smartExpand",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.smartShrink",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.keepMatchingSelections",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.ignoreMatchingSelections",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.expressionSelect",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.expressionSplit",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.insertCursorBelow",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.insertCursorAbove",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.scrollCursorPageTop",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.scrollCursorPageCenter",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.scrollCursorPageBottom",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.push0",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.push1",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.push2",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.push3",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.push4",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.push5",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.push6",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.push7",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.push8",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.push9",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.popDigit",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.resetCount",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.undo",
+				"category": "veloce"
+			},
+			{
+				"command": "veloce.redo",
+				"category": "veloce"
+			}
+		],
+		"keybindings": [
+			{
+				"key": "escape",
+				"command": "veloce.escape",
+				"when": "editorTextFocus && !veloce.enabled"
+			},
+			{
+				"key": "escape",
+				"command": "veloce.resetCount",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "backspace",
+				"command": "veloce.popDigit",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "0",
+				"command": "veloce.push0",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "1",
+				"command": "veloce.push1",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "2",
+				"command": "veloce.push2",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "3",
+				"command": "veloce.push3",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "4",
+				"command": "veloce.push4",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "5",
+				"command": "veloce.push5",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "6",
+				"command": "veloce.push6",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "7",
+				"command": "veloce.push7",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "8",
+				"command": "veloce.push8",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "9",
+				"command": "veloce.push9",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "a",
+				"command": "veloce.append",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+a",
+				"command": "veloce.appendLineEnd",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "b",
+				"command": "veloce.cursorWordStartLeftSelect",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+b",
+				"command": "veloce.cursorWordStartLeftExtend",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "c",
+				"command": "veloce.selectionCutInsert",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Alt+c",
+				"command": "veloce.selectionDeleteInsert",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+c",
+				"command": "veloce.insertCursorBelow",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Alt+Shift+c",
+				"command": "veloce.insertCursorAbove",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "d",
+				"command": "veloce.cutSelected",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Alt+d",
+				"command": "veloce.deleteSelected",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+d",
+				"command": "veloce.nop",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "e",
+				"command": "veloce.cursorWordEndRightSelect",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+e",
+				"command": "veloce.cursorWordEndRightExtend",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "f",
+				"command": "veloce.cursorCharacterAfterRightSelect",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Alt+f",
+				"command": "veloce.cursorCharacterBeforeLeftSelect",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+f",
+				"command": "veloce.cursorCharacterAfterRightExtend",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "g g",
+				"command": "cursorTop",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "g k",
+				"command": "cursorTop",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "g j",
+				"command": "cursorBottom",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "g e",
+				"command": "cursorBottom",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "g h",
+				"command": "cursorLineStart",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "g i",
+				"command": "cursorHome",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "g l",
+				"command": "cursorLineEnd",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "g .",
+				"command": "workbench.action.navigateToLastEditLocation",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+g g",
+				"command": "cursorTopSelect",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+g k",
+				"command": "cursorTopSelect",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+g j",
+				"command": "cursorBottomSelect",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+g e",
+				"command": "cursorBottomSelect",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+g h",
+				"command": "cursorLineBeginSelect",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+g i",
+				"command": "cursorHomeSelect",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+g l",
+				"command": "cursorEndSelect",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "h",
+				"command": "veloce.cursorLeft",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+h",
+				"command": "veloce.cursorLeftSelect",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "i",
+				"command": "veloce.insert",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+i",
+				"command": "veloce.insertLineStart",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Alt+Shift+i",
+				"command": "veloce.nop",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Ctrl+Shift+i",
+				"command": "veloce.nop",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "j",
+				"command": "veloce.cursorDown",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Alt+j",
+				"command": "editor.action.joinLines",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+j",
+				"command": "veloce.cursorDownSelect",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "k",
+				"command": "veloce.cursorUp",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Alt+k",
+				"command": "veloce.keepMatchingSelections",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+k",
+				"command": "veloce.cursorUpSelect",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Alt+Shift+k",
+				"command": "veloce.ignoreMatchingSelections",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "l",
+				"command": "veloce.cursorRight",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+l",
+				"command": "veloce.cursorRightSelect",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "m",
+				"command": "veloce.smartExpand",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+m",
+				"command": "veloce.smartShrink",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "n",
+				"command": "veloce.nop",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+n",
+				"command": "veloce.nop",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "o",
+				"command": "veloce.insertLineAfter",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Alt+o",
+				"command": "editor.action.insertLineAfter",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+o",
+				"command": "veloce.insertLineBefore",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Alt+Shift+o",
+				"command": "editor.action.insertLineBefore",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "p",
+				"command": "veloce.pasteAfter",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+p",
+				"command": "veloce.pasteBefore",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "q",
+				"command": "veloce.pastePrev",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+q",
+				"command": "veloce.pasteNext",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "r",
+				"command": "veloce.replaceCharacter",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+r",
+				"command": "veloce.pasteOver",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "s",
+				"command": "veloce.expressionSelect",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+s",
+				"command": "veloce.expressionSplit",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "t",
+				"command": "veloce.cursorCharacterBeforeRightSelect",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Alt+t",
+				"command": "veloce.cursorCharacterAfterLeftSelect",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+t",
+				"command": "veloce.cursorCharacterBeforeRightExtend",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Alt+Shift+t",
+				"command": "veloce.cursorCharacterAfterLeftExtend",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "u",
+				"command": "veloce.undo",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+u",
+				"command": "veloce.redo",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "v t",
+				"command": "veloce.scrollCursorPageTop",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "v c",
+				"command": "veloce.scrollCursorPageCenter",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "v v",
+				"command": "veloce.scrollCursorPageCenter",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "v b",
+				"command": "veloce.scrollCursorPageBottom",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Alt+v",
+				"command": "veloce.nop",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+v",
+				"command": "veloce.nop",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "w",
+				"command": "veloce.cursorWordStartRightSelect",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+w",
+				"command": "veloce.cursorWordStartRightExtend",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "x",
+				"command": "veloce.cursorLineSelect",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+x",
+				"command": "veloce.cursorLineExtend",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "y",
+				"command": "veloce.copySelected",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+y",
+				"command": "veloce.nop",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "z",
+				"command": "veloce.nop",
+				"when": "editorTextFocus && veloce.enabled"
+			},
+			{
+				"key": "Shift+z",
+				"command": "veloce.nop",
+				"when": "editorTextFocus && veloce.enabled"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint src --ext ts",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/lodash": "^4.14.149",
+		"@types/mocha": "^7.0.1",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.43.0",
+		"@typescript-eslint/eslint-plugin": "^2.18.0",
+		"@typescript-eslint/parser": "^2.18.0",
+		"eslint": "^6.8.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.0.1",
+		"typescript": "^3.7.5",
+		"vscode-test": "^1.3.0"
+	},
+	"dependencies": {}
+}
